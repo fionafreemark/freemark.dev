@@ -1,0 +1,20 @@
+@use "../variables" as *;
+
+// FOOTER SECTION ------------------------------------
+
+footer {
+  background-color: $black;
+}
+
+.footer-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: $white;
+  font-weight: $fw-default;
+  font-family: $ff-headings;
+}

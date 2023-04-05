@@ -1,0 +1,134 @@
+@use "../variables" as *;
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em 0;
+  z-index: 10;
+  background-color: $grey;
+  height: 7em;
+}
+
+.h1-link {
+  z-index: 20;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.3em 0.5em;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+
+  a {
+    display: inline-block;
+    color: $black;
+    padding: 0.4em 1em;
+    margin-left: 0.4em;
+    text-transform: uppercase;
+  }
+
+}
+
+.h1-link,
+.nav-ul a {
+  border: 1px solid $transparent;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $black;
+  }
+}
+
+// Main Nav Link Styles
+
+// Mobile Nav Styles
+.mobile-nav {
+  display: none;
+}
+
+.nav-menu {
+
+  &.unclicked,
+  &.clicked {
+    position: fixed;
+    right: 3.15em;
+    top: 1.35em;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid $transparent;
+    background-color: $transparent;
+    font-size: $fs-med;
+    cursor: pointer;
+
+    &:hover,
+    &:focus:focus {
+      border: 1px solid $black;
+    }
+  }
+}
+
+.nav-menu.unclicked {
+  display: none;
+}
+
+.nav-menu-clicked {
+  display: inline-block;
+}
+
+.nav-button {
+
+  &.unclicked,
+  &.clicked {
+    position: fixed;
+    z-index: 20;
+    right: 6.5rem;
+    top: 2.5rem;
+    display: none;
+    background-color: $transparent;
+    color: $black;
+    font-size: $fs-lrg;
+    transition: 500ms;
+  }
+}
+
+.nav-button.clicked {
+  rotate: -45deg;
+}
+
+.nav-button.unclicked {
+  rotate: 0deg;
+}
+
+.mobile-nav {
+  .nav-ul {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 25rem;
+    background-color: $grey;
+
+    li {
+      margin-bottom: 2rem;
+
+      a {
+        font-size: $fs-lrg;
+      }
+    }
+  }
+
+
+}

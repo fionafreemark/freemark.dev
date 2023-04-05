@@ -1,0 +1,83 @@
+@use "../variables" as *;
+
+// ABOUT ME SECTION -----------------------------------
+
+.about-me-section {
+  padding: 10% 0 5%;
+  background-color: $white;
+}
+
+.about-me-container {
+  position: relative;
+  display: flex;
+
+}
+
+.about-me-img-container {
+  align-self: center;
+  flex: 40%;
+  margin-top: 1%;
+}
+
+.fiona-portrait {
+  object-position: 45%;
+  object-fit: cover;
+  width: 90%;
+  min-width: 280px;
+  padding: 2%;
+  border-radius: 50% 50% 0 0;
+  border: 3px solid $pink;
+  box-shadow: 5px 5px 0px $pink;
+}
+
+.about-me-heading {
+  color: $black;
+  margin-bottom: 3%;
+}
+
+.about-me-text-container {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 60%;
+  flex-wrap: wrap;
+  padding: 0 2%;
+  margin-right: 5%;
+}
+
+.about-me-text {
+  padding-bottom: 2%;
+}
+
+.about-titles {
+  margin-bottom: 3%;
+}
+
+.bold-link {
+  font-family: $ff-body;
+  font-weight: $fw-bold;
+}
+
+.juno-link {
+  font-family: $ff-body;
+  font-weight: $fw-semi-bold;
+  border-bottom: 1px solid $black;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $red;
+  }
+}
+
+.scroll-btn {
+  width: 100%;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.down-arrow-btn {
+  width: 2em;
+  height: 2em;
+}

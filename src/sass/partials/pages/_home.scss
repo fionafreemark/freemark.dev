@@ -1,0 +1,72 @@
+@use "../variables" as *;
+
+// HOME PAGE -----------------------------------
+
+.home-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: calc(100vh - 70px);
+  padding: 10% 0;
+  background-color: $white;
+  h2 {
+    margin-bottom: 0.4em;
+  }
+  h3 {
+    font-family: $ff-body;
+    font-weight: $fw-semi-bold;
+    font-size: $fs-lrg;
+    margin-bottom: 2em;
+  }
+}
+
+.heading-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 45%;
+}
+.heading-img-cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 600px;
+  margin: auto;
+  .desktop-img {
+    object-position: 20% 70%;
+      object-fit: cover;
+      width: 90%;
+      max-height: 650px;
+      padding: 2%;
+      border-radius: 40% 40% 0 0;
+  }
+}
+
+// Home Page Shapes
+
+.home-pie {
+  right: 6%;
+  top: 1%;
+}
+
+.home-soft-square {
+  left: -5%;
+  bottom: 10%;
+}
+
+.home-arrow-point {
+  left: 10%;
+  top: 5%;
+  rotate: 45deg;
+}
+
+.home-arrow-square {
+  right: 5%;
+  bottom: 10%;
+  rotate: -46deg;
+}
+

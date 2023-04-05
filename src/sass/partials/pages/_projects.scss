@@ -1,0 +1,97 @@
+@use "../variables" as *;
+
+// PROJECTS SECTION ----------------------------------
+
+.projects-section {
+  min-height: calc(100vh - 70px);
+  padding: 10% 0;
+  background-color: $white;
+}
+
+.proj-heading {
+  color: $black;
+}
+
+.proj-outer-box {
+  position: relative;
+}
+
+.proj-container {
+  padding: 2% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+//  PROJECT BOX STYLES----------
+
+.proj-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 5% 0;
+  border: 3px solid $grey;
+  transition: 300ms;
+  &:hover {
+    box-shadow: -.7rem 1.1rem 3rem 1.7rem rgba(0, 0, 0, .11);
+  }
+}
+
+.proj-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+  min-height: 448px;
+}
+
+.proj-desc,
+.proj-skills {
+  margin: 3% 0 2% 0;
+}
+
+.proj-skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 5%;
+
+  li {
+    color: $black;
+    text-transform: uppercase;
+    font-weight: $fw-semi-bold;
+    font-size: $fs-small;
+    padding-right: 2%;
+  }
+}
+
+.proj-link:first-of-type {
+  margin-right: 5%;
+}
+
+// PROJECT IMAGE STYLES ----------
+.proj-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 32%;
+  margin: -2px -2px;
+
+}
+
+.creative-img,
+.animal-match-img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  position: relative;
+  transition: 300ms;
+}
+
+.creative-img:hover,
+.animal-match-img:hover,
+.creative-img:focus,
+.animal-match-img:focus {
+  background-color: $pink;
+}
