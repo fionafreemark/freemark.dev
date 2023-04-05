@@ -15,7 +15,7 @@ const Home = () => {
         <div className="heading-cont">
           <h2>Fiona Freemark</h2>
           <h3>Front-End Developer & Artist</h3>
-          <Link className="link-outline" to={'/'} element={<Contact />}>Get in Touch</Link>
+          <Link className="link-outline" to={'/contact'} element={<Contact />}>Get in Touch</Link>
         </div>
         <div className="heading-img-cont">
           <img src={DesktopView} alt="Desktop scene with laptop and pink notebook." className="desktop-img" />
