@@ -37,7 +37,7 @@ const MobileNav = () => {
   };
   return (
     <nav className="mobile-nav">
-      <button className={navMenuClass} onClick={updateMenu}>
+      <button className={navMenuClass} onClick={updateMenu} alt="menu button" aria-label="menu-button" >
         <AiOutlinePlus className={navButtonClass} />
       </button>
       <div className={navVisibility} >
