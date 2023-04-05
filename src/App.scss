@@ -1,0 +1,23 @@
+// Set Up Files
+@use '../src/sass/partials/global';
+// @use './sass/partials/mixins';
+@use './sass/partials/setup';
+@use './sass/partials/typography';
+@use './sass/partials/variables';
+// Component Styles
+@use 'sass/partials/components/footer';
+@use 'sass/partials/components/header';
+@use 'sass/partials/components/nav';
+@use 'sass/partials/components/skills';
+
+// @use 'sass/partials/components/nav';
+// // Page Styles
+@use 'sass/partials/pages/projects';
+@use 'sass/partials/pages/contact';
+@use 'sass/partials/pages/about';
+@use 'sass/partials/pages/home';
+// // 
+// // Error Handling
+
+// // Media Queries
+@use './sass/partials/media-queries/media-queries';

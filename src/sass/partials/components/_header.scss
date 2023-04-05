@@ -1,0 +1,36 @@
+@use "../variables" as *;
+
+/* Navigation Skip Link */
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: -0px;
+    z-index: 999;
+    background: $transparent;
+    color: $black;
+    font-size: $fs-default;
+    padding: 5px;
+    border: 1px solid $black;
+}
+
+.skip-link:focus {
+    left: 0;
+    color: $black;
+}
+
+// Header Section
+header {
+    position: fixed;
+    background-color: $white;
+    height: 8rem;
+    position: relative;
+}
+
+// General Positioning
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

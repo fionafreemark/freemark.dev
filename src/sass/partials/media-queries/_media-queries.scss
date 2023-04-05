@@ -1,0 +1,408 @@
+@use "../variables" as *;
+@media (max-width: 1200px) {
+  h2 {
+      font-size: $fs-3xl;
+    }
+}
+
+// --------------- 1100px ------------------------
+@media (max-width: 1100px) {
+
+  // GLOBAL STYLES ----------
+  .wrapper {
+    width: 85%;
+  }
+
+  h2 {
+    font-size: $fs-2xl;
+  }
+
+  // Global Shape Styles
+
+  .shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+  }
+
+  // HOME PAGE
+
+  .home-section {
+    h3 {
+      font-size: $fs-med;
+    }
+  }
+
+  .heading-img-cont {
+    width: 350px;
+  }
+
+  // Home Page Shapes
+  .home-pie {
+    right: 4%;
+    top: 14%;
+  }
+
+  .home-soft-square {
+    left: -7%;
+    bottom: 25%;
+  }
+
+  .home-arrow-point {
+    left: 10%;
+    top: 20%;
+  }
+
+  .home-arrow-square {
+    right: 5%;
+    bottom: 20%;
+  }
+
+  // ABOUT ME SECTION ----------
+  p,
+  label,
+  textarea,
+  li,
+  input[type="email"],
+  input[type="text"] {
+    line-height: 2.5rem;
+  }
+
+  // SKILLS SECTION ----------
+  .skills-icon-container {
+    justify-content: center;
+  }
+
+  .icon-box {
+    flex-basis: 25%;
+  }
+
+  i {
+    font-size: $fs-3xl;
+  }
+
+  // PROJECT SECTION ----------
+  .proj-box-1::after {
+    bottom: 0;
+  }
+
+  // Nav Styles - Mobile Menu
+
+  .nav-menu.unclicked,
+  .nav-button.unclicked,
+  .nav-button.clicked {
+    display: block;
+  }
+
+  .nav-ul.unclicked,
+  .desktop-nav,
+  .nav-ul .category-link {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+}
+
+// --------------- 1100px --------------------------
+// --------------- 800px ---------------------------
+@media (max-width: 800px) {
+
+  // GLOBAL STYLES ----------
+  h2 {
+    font-size: $fs-xl;
+  }
+  // Global Shape Styles
+
+  .shape {
+    position: absolute;
+    width: 60px;
+    height: 65px;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+
+  // HEADER SECTION ----------
+  .menu-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .home-section {
+    padding: 20% 0;
+  }
+
+  .heading-cont {
+    width: 100%;
+  }
+
+  .heading-img-cont {
+    width: 300px;
+    height: 380px;
+    margin-bottom: 2em;
+  }
+
+  .heading-cont {
+    order: 2;
+  }
+
+  .home-pie {
+    right: 8%;
+    top: 2%;
+  }
+
+  .home-soft-square {
+    left: -5%;
+    bottom: 15%;
+  }
+
+  .home-arrow-point {
+    left: 10%;
+    top: 10%;
+  }
+
+  .home-arrow-square {
+    right: 5%;
+    bottom: 10%;
+  }
+
+  // ABOUT ME SECTION -----------
+
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .about-me-img-container {
+    flex-basis: 100%;
+    width: 80%;
+  }
+
+  .about-me-text-container {
+    flex-basis: 100%;
+    padding: 5% 0;
+    margin-left: 0;
+  }
+
+  .about-me-text {
+    margin: 1% 0;
+  }
+
+  .scroll-btn {
+    margin: 5em 0;
+  }
+
+  // SKILLS SECTION ----------
+  .skills-section {
+    padding: 20% 0;
+  }
+
+  .icon-box {
+    flex-basis: 19%;
+    margin: 0 1%;
+  }
+
+
+  // PROJECTS SECTION ----------
+
+  .projects-section {
+    padding: 20% 0;
+  }
+
+  .proj-container {
+    flex-direction: column;
+  }
+
+  .proj-box {
+    width: 100%;
+
+    a.proj-link:nth-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  // CONTACT SECTION -----------------
+  .contact-section {
+    padding: 20% 0;
+  }
+
+  .contact-outer-box {
+    flex-direction: column;
+  }
+
+  .contact-left-box {
+    flex-basis: 100%;
+  }
+
+  .contact-body {
+    text-align: justify;
+  }
+
+  .contact-icon-box {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    i {
+      font-size: $fs-xl;
+    }
+  }
+
+  .contact-right-box {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 2% 0;
+    flex-basis: 100%;
+  }
+
+  .client-name,
+  .client-email,
+  .client-message {
+    flex-basis: 100%;
+    padding: 2% 2%;
+  }
+
+  .form-button {
+    align-self: flex-start;
+    width: auto;
+    margin-top: 5%;
+  }
+
+  .scroll-top-container {
+    right: 46%;
+    bottom: 2%;
+  }
+
+}
+
+// --------------- 800px -------------------------------
+// --------------- 500px -------------------------------
+@media (max-width: 500px) {
+
+  // GLOBAL STYLES ----------
+
+  h3 {
+    font-size: $fs-xl;
+  }
+
+  h2,
+  h4 {
+    font-size: $fs-small;
+  }
+
+  p,
+  .juno-link {
+    font-size: $fs-default;
+  }
+
+  // //Mobile Nav
+  .nav-menu {
+
+    &.unclicked,
+    &.clicked {
+      right: 1.8em;
+    }
+  }
+
+  .nav-button {
+
+    &.unclicked,
+    &.clicked {
+      right: 3.5rem;
+    }
+  }
+
+  // HEADING SECTION -----------
+  .heading-cont {
+    h2 {
+      font-size: $fs-lrg;
+    }
+
+    h3 {
+      font-size: $fs-small;
+      margin-bottom: 1.8em;
+    }
+
+    a.link-outline {
+      font-size: $fs-default;
+    }
+
+  }
+
+  // ABOUT ME SECTION ----------
+  .fiona-portrait {
+    min-width: 120px;
+  }
+
+  .about-me-text {
+    padding: 2% 0;
+  }
+
+  // SKILLS SECTION ----------
+  .icon-box {
+    flex-basis: 30%;
+  }
+
+  i {
+    font-size: $fs-2xl;
+  }
+
+  // PROJECT SECTION ----------
+  .proj-skills {
+    li {
+      font-size: $fs-default;
+    }
+  }
+
+  .proj-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .proj-link {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 8%;
+  }
+
+  .proj-link:first-of-type {
+    margin-right: 0;
+  }
+
+  // CONTACT SECTION ----------
+  .contact-section {
+    padding-bottom: 20%;
+  }
+
+  .contact-icon-box i {
+    font-size: $fs-lrg;
+  }
+
+  .contact-icon-box .fa-linkedin {
+    margin-left: 5px;
+    padding-left: 5px;
+  }
+
+  .contact-icon-box .fa-calendar {
+    margin-right: 5px;
+    padding-right: 5px;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+
+}
