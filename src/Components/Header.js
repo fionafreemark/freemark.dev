@@ -1,9 +1,5 @@
 // Components
 import Nav from "./Nav";
-// Modules
-
-// Pages 
-
 
 const Header = () => {
   return (

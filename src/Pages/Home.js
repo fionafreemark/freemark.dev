@@ -1,6 +1,5 @@
 // Modules
 import { Link } from "react-router-dom";
-// Components
 // Pages
 import Contact from '../Pages/Contact';
 // Assets
@@ -12,8 +11,7 @@ import ArrowSquare from "../assets/shapes/arrow-square.svg";
 
 const Home = () => {
   return (
-    <div className="wrapper">
-      <section className="home-section">
+      <section className="home-section wrapper">
         <div className="heading-cont">
           <h2>Fiona Freemark</h2>
           <h3>Front-End Developer & Artist</h3>
@@ -27,8 +25,6 @@ const Home = () => {
           <img src={ArrowSquare} alt="" className="arrow home-arrow-square" />
         </div>
       </section>
-    </div>
-
   )
 };
 

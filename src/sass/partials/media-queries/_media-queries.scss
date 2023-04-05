@@ -1,8 +1,9 @@
 @use "../variables" as *;
+
 @media (max-width: 1200px) {
   h2 {
-      font-size: $fs-3xl;
-    }
+    font-size: $fs-3xl;
+  }
 }
 
 // --------------- 1100px ------------------------
@@ -11,6 +12,10 @@
   // GLOBAL STYLES ----------
   .wrapper {
     width: 85%;
+  }
+
+  .h1-link {
+    margin: .5% 0;
   }
 
   h2 {
@@ -31,7 +36,25 @@
     height: 55px;
   }
 
-  // HOME PAGE
+  // NAV ----------
+
+  .nav-menu.unclicked,
+  .nav-button.unclicked,
+  .nav-button.clicked {
+    display: block;
+  }
+
+  .nav-ul.unclicked,
+  .desktop-nav,
+  .nav-ul .category-link {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  // HOME PAGE ----------
 
   .home-section {
     h3 {
@@ -88,28 +111,24 @@
   }
 
   // PROJECT SECTION ----------
-  .proj-box-1::after {
-    bottom: 0;
+  .proj-box {
+    width: 49%;
   }
 
-  // Nav Styles - Mobile Menu
-
-  .nav-menu.unclicked,
-  .nav-button.unclicked,
-  .nav-button.clicked {
-    display: block;
+  .proj-desc {
+    font-size: $fs-default;
   }
 
-  .nav-ul.unclicked,
-  .desktop-nav,
-  .nav-ul .category-link {
-    display: none;
+  .proj-skills {
+    li {
+      font-size: $fs-default;
+    }
   }
 
-  .mobile-nav {
-    display: flex;
+  // CONTACT SECTION ------------
+  .contact-section {
+    padding: 15% 0;
   }
-
 }
 
 // --------------- 1100px --------------------------
@@ -120,8 +139,8 @@
   h2 {
     font-size: $fs-xl;
   }
-  // Global Shape Styles
 
+  // Global Shape Styles
   .shape {
     position: absolute;
     width: 60px;
@@ -179,7 +198,6 @@
   }
 
   // ABOUT ME SECTION -----------
-
   .about-me-container {
     flex-direction: column;
   }
@@ -215,9 +233,8 @@
 
 
   // PROJECTS SECTION ----------
-
   .projects-section {
-    padding: 20% 0;
+    padding: 25% 0 20% 0;
   }
 
   .proj-container {
@@ -230,6 +247,10 @@
     a.proj-link:nth-of-type(2) {
       margin-bottom: 0;
     }
+  }
+
+  .proj-text-container {
+    min-height: 300px;
   }
 
   // CONTACT SECTION -----------------
@@ -292,6 +313,13 @@
 @media (max-width: 500px) {
 
   // GLOBAL STYLES ----------
+  h1 {
+    font-size: $fs-small;
+  }
+
+  .h1-link {
+    margin: 4% 0 0 0;
+  }
 
   h3 {
     font-size: $fs-xl;
@@ -307,12 +335,12 @@
     font-size: $fs-default;
   }
 
-  // //Mobile Nav
+  // NAV/HEADING ------------
   .nav-menu {
 
     &.unclicked,
     &.clicked {
-      right: 1.8em;
+      right: 1.66em;
     }
   }
 
@@ -324,7 +352,6 @@
     }
   }
 
-  // HEADING SECTION -----------
   .heading-cont {
     h2 {
       font-size: $fs-lrg;
@@ -342,6 +369,10 @@
   }
 
   // ABOUT ME SECTION ----------
+  .about-me-section {
+    padding: 25% 0 20% 0;
+  }
+
   .fiona-portrait {
     min-width: 120px;
   }
@@ -384,7 +415,7 @@
 
   // CONTACT SECTION ----------
   .contact-section {
-    padding-bottom: 20%;
+    padding: 25% 0 20% 0;
   }
 
   .contact-icon-box i {
@@ -405,4 +436,20 @@
     width: 100%;
   }
 
+  // FOOTER ---------------
+  .footer-container {
+    flex-direction: column;
+  }
+
+  footer p {
+    margin-bottom: 2%;
+    margin-right: 0;
+
+    &::after {
+      rotate: 90deg;
+      height: 170px;
+      top: -235%;
+      right: 49%;
+    }
+  }
 }
