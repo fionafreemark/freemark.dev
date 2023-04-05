@@ -5,7 +5,7 @@
 .contact-section {
   background-color: $pink;
   position: relative;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 60px);
   padding: 10% 0;
 }
 
@@ -14,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
 }
 
 .contact-left-box {
@@ -43,14 +42,17 @@
   align-items: center;
 
 }
+
 .social-icon-box {
-border: 2px solid $transparent;
-padding: 0;
+  border: 2px solid $transparent;
+  padding: 0;
+
   &:hover,
-    &:focus {
-      border: 2px solid $black;
-    }
+  &:focus {
+    border: 2px solid $black;
+  }
 }
+
 .social-icon {
   margin: .2em;
   padding: .2em .2em .1em .2em;
@@ -58,12 +60,7 @@ padding: 0;
   width: 3em;
   height: 3em;
   transition: 300ms;
-  
-
 }
-
-
-
 
 .contact-form {
   display: flex;
@@ -88,50 +85,3 @@ padding: 0;
   align-self: flex-start;
   margin-top: 2%;
 }
-
-.scroll-top-container {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-}
-
-.scroll-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: $fs-default;
-  transition: 300ms;
-  i {
-    font-size: $fs-lrg;
-    border: none;
-    animation: fade 1s infinite ease-in-out;
-    &:hover {
-      animation: fade-hover 1s infinite ease-in-out;
-    }
-  }
-}
-
-@keyframes fade {
-
-  0%,
-  100% {
-    color: $white;
-  }
-
-  50% {
-    color: $black;
-  }
-}
-@keyframes fade-hover {
-
-  0%,
-  100% {
-    color: $white;
-  }
-
-  50% {
-    color: $black;
-  }
-}
-

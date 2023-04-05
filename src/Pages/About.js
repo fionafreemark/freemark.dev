@@ -1,5 +1,4 @@
 // Components
-
 import Skills from '../Components/Skills';
 // Assets
 import Fiona from '../assets/fiona-freemark-lilac-headshot.jpg';
@@ -22,7 +21,6 @@ function About() {
             <p className="about-me-text">
               With a keen <span className='bold-link'> eye for design and an unwavering attention to detail,</span> I strive to build pixel-perfect websites that are not only functional but also visually stunning. I am always using my problem-solving abilities to look for <span className="bold-link">innovative ways to bring my artistic vision to life</span> as I take on new projects and continue to grow my tech stack.</p>
           </div>
-
           <div className="about-me-img-container">
             <img className="fiona-portrait" src={Fiona}
               alt="Portrait of Fiona Freemark, the developer of this website." />
@@ -36,7 +34,6 @@ function About() {
       </section>
       < Skills id="skills" />
     </>
-
   );
 }
 

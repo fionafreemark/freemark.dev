@@ -3,18 +3,43 @@
 // FOOTER SECTION ------------------------------------
 
 footer {
-  background-color: $black;
+  background-color: $grey;
 }
 
 .footer-container {
-  padding: 20px 0;
+  padding: 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer p {
-  color: $white;
-  font-weight: $fw-default;
+  position: relative;
+  font-size: $fs-default;
+  font-weight: $fw-semi-bold;
   font-family: $ff-headings;
+  margin-right: 2%;
+  color: $black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 25px;
+    right: -8%;
+    background-color: $pink;
+  }
+}
+
+.footer-social-icon-box {
+  padding: .5em;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.footer-social-icon {
+  font-size: $fs-med;
 }

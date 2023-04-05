@@ -5,12 +5,12 @@
 .about-me-section {
   padding: 10% 0 5%;
   background-color: $white;
+  min-height: 100vh;
 }
 
 .about-me-container {
   position: relative;
   display: flex;
-
 }
 
 .about-me-img-container {
@@ -80,4 +80,10 @@
 .down-arrow-btn {
   width: 2em;
   height: 2em;
+  transition: 300ms;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
