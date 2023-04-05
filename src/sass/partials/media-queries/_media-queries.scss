@@ -64,6 +64,10 @@
 
   .heading-img-cont {
     width: 350px;
+    .desktop-img {
+      width: 315px;
+      height: 418px;
+    }
   }
 
   // Home Page Shapes
@@ -171,6 +175,10 @@
     width: 300px;
     height: 380px;
     margin-bottom: 2em;
+        .desktop-img {
+            width: 270px;
+            height: 358px;
+          }
   }
 
   .heading-cont {

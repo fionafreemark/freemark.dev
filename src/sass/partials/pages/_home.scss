@@ -10,9 +10,11 @@
   min-height: calc(100vh - 60px);
   padding: 10% 0;
   background-color: $white;
+
   h2 {
     margin-bottom: 0.4em;
   }
+
   h3 {
     font-family: $ff-body;
     font-weight: $fw-semi-bold;
@@ -28,6 +30,7 @@
   align-items: flex-start;
   width: 45%;
 }
+
 .heading-img-cont {
   position: relative;
   display: flex;
@@ -36,13 +39,14 @@
   width: 500px;
   height: 600px;
   margin: auto;
+
   .desktop-img {
     object-position: 20% 70%;
-      object-fit: cover;
-      width: 90%;
-      max-height: 650px;
-      padding: 2%;
-      border-radius: 40% 40% 0 0;
+    object-fit: cover;
+    width: 450px;
+    height: 600px;
+    padding: 2%;
+    border-radius: 40% 40% 0 0;
   }
 }
 
@@ -68,4 +72,3 @@
   bottom: 10%;
   rotate: -46deg;
 }
-
