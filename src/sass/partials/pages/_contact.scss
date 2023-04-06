@@ -35,10 +35,13 @@
   padding: 3% 0 8% 0;
 }
 
+.contact-header {
+  padding-bottom: 8%;
+}
+
 .contact-icon-box {
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
   align-items: center;
 
 }
@@ -58,8 +61,8 @@
   margin: .2em;
   padding: .2em .2em .1em .2em;
   color: $black;
-  width: 2.7em;
-  height: 2.7em;
+  width: 2em;
+  height: 2em;
   transition: 300ms;
 }
 
