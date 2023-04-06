@@ -10,16 +10,16 @@ function Contact() {
               <h3  className="contact-header">Contact</h3>
               <p  className="contact-body">Let's work together. Send me a message or contact me at the links below! </p>
               <div  className="contact-icon-box">
-                <a href="https://www.linkedin.com/in/fiona-freemark/" title="linked in" className="social-icon-box">
+              <a href="https://www.linkedin.com/in/fiona-freemark/" title="linked in" className="social-icon-box" target="_blank" rel="noreferrer">
                   <FaLinkedin className="social-icon"/>
                 </a>
-                <a href="https://github.com/fionafreemark" title="github" className="social-icon-box">
+              <a href="https://github.com/fionafreemark" title="github" className="social-icon-box" target="_blank" rel="noreferrer">
                   <FaGithub className="social-icon" />
                 </a>
-                <a href="mailto:freemark.dev@gmail.com" title="email me!" className="social-icon-box">
+              <a href="mailto:freemark.dev@gmail.com" title="email me!" className="social-icon-box" target="_blank" rel="noreferrer">
                   <FaEnvelope className="social-icon" />
                 </a>
-                <a href="https://calendly.com/fionafreemark/15-minute-chat" title="book a chat" className="social-icon-box">
+              <a href="https://calendly.com/fionafreemark/15-minute-chat" title="book a chat" className="social-icon-box" target="_blank" rel="noreferrer">
                   <FaCalendarCheck className="social-icon" />
                 </a>
               </div>

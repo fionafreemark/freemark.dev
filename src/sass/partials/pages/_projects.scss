@@ -2,7 +2,7 @@
 
 // PROJECTS SECTION ----------------------------------
 .projects-section {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 55px);
   padding: 10% 0;
   background-color: $white;
 }
@@ -26,22 +26,30 @@
 .proj-box {
   display: flex;
   flex-direction: column;
-  flex-shrink: 3;
+  justify-content: space-between;
   width: 45%;
   margin: 5% 0;
   border: 3px solid $grey;
   transition: 300ms;
 
   &:hover {
-    box-shadow: -.7rem 1.1rem 3rem 1.7rem rgba(0, 0, 0, .11);
+      box-shadow: 0px 0px 10px 5px rgba(170, 170, 170, 0.52);;
   }
 }
 
 .proj-text-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 500px;
+  justify-content: flex-start;
+  min-height: 390px;
+  padding: 5%;
+}
+
+.vote-proj-text {
+  min-height: 503px;
+}
+
+.proj-link-container {
   padding: 5%;
 }
 
