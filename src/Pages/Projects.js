@@ -23,7 +23,7 @@ function Projects() {
                 <h4>Jobi Job Board</h4>
                 <h5>In Development</h5>
                 <p className="proj-desc">
-                  Jobi is job board app where employers can post jobs for prospective employees. Built
+                  A job board app where employers can post open positions for prospective employees. Built
                   with React, this project uses JavaScript, SASS & HTML. Converted from a style guide designed by Rashedul Kabir, and created with accessibility and responsiveness in mind.
                 </p>
                 <p className="proj-desc">

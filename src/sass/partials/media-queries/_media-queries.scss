@@ -57,7 +57,7 @@
   // HOME PAGE ----------
 
   .home-section {
-    
+
     h3 {
       font-size: $fs-med;
     }
@@ -65,6 +65,7 @@
 
   .heading-img-cont {
     width: 350px;
+
     .desktop-img {
       width: 315px;
       height: 418px;
@@ -145,6 +146,11 @@
     font-size: $fs-xl;
   }
 
+  h3 {
+    text-align: center;
+  }
+
+
   // Global Shape Styles
   .shape {
     position: absolute;
@@ -177,10 +183,11 @@
     width: 300px;
     height: 380px;
     margin-bottom: 2em;
-        .desktop-img {
-            width: 270px;
-            height: 358px;
-          }
+
+    .desktop-img {
+      width: 270px;
+      height: 358px;
+    }
   }
 
   .heading-cont {
@@ -224,6 +231,11 @@
     order: 2;
   }
 
+  .about-me-heading {
+    align-self: center;
+    padding-bottom: 8%;
+  }
+
   .about-me-text {
     margin: 1% 0;
   }
@@ -235,6 +247,10 @@
   // SKILLS SECTION ----------
   .skills-section {
     padding: 20% 0;
+  }
+
+  .skills-heading {
+    padding-bottom: 8%;
   }
 
   .icon-box {
@@ -351,6 +367,7 @@
   .home-section {
     min-height: calc(100vh - 88px);
   }
+
   .nav-menu {
 
     &.unclicked,
