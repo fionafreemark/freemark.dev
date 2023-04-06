@@ -57,6 +57,7 @@
   // HOME PAGE ----------
 
   .home-section {
+    
     h3 {
       font-size: $fs-med;
     }
@@ -164,11 +165,12 @@
   }
 
   .home-section {
-    padding: 20% 0;
+    padding: 20% 0 12%;
   }
 
   .heading-cont {
     width: 100%;
+    align-items: center;
   }
 
   .heading-img-cont {
@@ -219,6 +221,7 @@
     flex-basis: 100%;
     padding: 5% 0;
     margin-left: 0;
+    order: 2;
   }
 
   .about-me-text {
@@ -344,6 +347,10 @@
   }
 
   // NAV/HEADING ------------
+
+  .home-section {
+    min-height: calc(100vh - 88px);
+  }
   .nav-menu {
 
     &.unclicked,

@@ -5,7 +5,7 @@
 .contact-section {
   background-color: $pink;
   position: relative;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 55px);
   padding: 10% 0;
 }
 
@@ -38,7 +38,7 @@
 .contact-icon-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
 
 }
@@ -46,6 +46,7 @@
 .social-icon-box {
   border: 2px solid $transparent;
   padding: 0;
+  margin: 0 1%;
 
   &:hover,
   &:focus {
@@ -57,15 +58,15 @@
   margin: .2em;
   padding: .2em .2em .1em .2em;
   color: $black;
-  width: 3em;
-  height: 3em;
+  width: 2.7em;
+  height: 2.7em;
   transition: 300ms;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  padding: 5% 0 5% 10%;
+  padding-left: 5%;
 
   label {
     margin: 2% 0 1%;

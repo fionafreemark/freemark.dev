@@ -14,7 +14,7 @@ import './App.scss';
 
 function App() {
   return (
-    <div class="app">
+    <div className="app">
       <Header />
       <main id="main">
       <Routes>

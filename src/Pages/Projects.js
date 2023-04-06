@@ -20,7 +20,8 @@ function Projects() {
                 </a>
               </div>
               <div className="proj-text-container">
-                <h4>Jobi Job Board - *In Development*</h4>
+                <h4>Jobi Job Board</h4>
+                <h5>In Development</h5>
                 <p className="proj-desc">
                   Jobi is job board app where employers can post jobs for prospective employees. Built
                   with React, this project uses JavaScript, SASS & HTML. Converted from a style guide designed by Rashedul Kabir, and created with accessibility and responsiveness in mind.
@@ -35,6 +36,7 @@ function Projects() {
                   <li>SASS</li>
                   <li>HTML</li>
                 </ul>
+              </div>
                 <div className="proj-link-container">
                   <a className="proj-link link-outline" href="https://jobi-app.netlify.app/"
                   >Live
@@ -42,7 +44,6 @@ function Projects() {
                   <a className="proj-link link-outline" href="https://github.com/fionafreemark/jobi-job-search-app"
                   >GitHub</a>
                 </div>
-              </div>
             </div>
             <div className="proj-box">
               <div className="proj-img-container">
@@ -51,7 +52,7 @@ function Projects() {
                     alt="Screenshot of the 'Whatever Floats your Vote' app with an illustration of a ballot box." />
                 </a>
               </div>
-              <div className="proj-text-container">
+              <div className="proj-text-container vote-proj-text">
                 <h4>Whatever Floats Your Vote</h4>
                 <p className="proj-desc">
                   An anonymous voting app that allows users to create, vote on, and view poll results. Built
@@ -68,6 +69,7 @@ function Projects() {
                   <li>SASS</li>
                   <li>HTML</li>
                 </ul>
+              </div>
                 <div className="proj-link-container">
                   <a className="proj-link link-outline" href="https://whateverfloatsyourvote.netlify.app/"
                   >Live
@@ -75,7 +77,6 @@ function Projects() {
                   <a className="proj-link link-outline" href="https://github.com/fionafreemark/whatever-floats-your-vote"
                   >GitHub</a>
                 </div>
-              </div>
             </div>
             <div className="proj-box">
               <div className="proj-img-container">
@@ -100,13 +101,13 @@ function Projects() {
                   <li>SASS</li>
                   <li>HTML</li>
                 </ul>
+              </div>
                 <div className="proj-link-container">
                   <a className="proj-link link-outline" href="https://the-daily-tarot.netlify.app/"  >Live
                     Site</a>
                   <a className="proj-link link-outline" href="https://github.com/fionafreemark/the-daily-tarot"
                   >GitHub</a>
                 </div>
-              </div>
             </div>
             <div className="proj-box">
               <div className="proj-img-container">
@@ -128,13 +129,13 @@ function Projects() {
                   <li>SASS</li>
                   <li>GitHub</li>
                 </ul>
+              </div>
                 <div className="proj-link-container">
                   <a className="proj-link link-outline" href="https://creative-brand-design.netlify.app/" >Live
                     Site</a>
                   <a className="proj-link link-outline" href="https://github.com/fionafreemark/creative-brand-design"
                   >GitHub</a>
                 </div>
-              </div>
             </div>
             <div className="proj-box">
               <div className="proj-img-container">
@@ -157,13 +158,13 @@ function Projects() {
                   <li>JavaScript</li>
                   <li>GitHub</li>
                 </ul>
+              </div>
                 <div className="proj-link-container">
                   <a className="proj-link link-outline" href="https://animal-match-app.netlify.app/"  >Live
                     Site</a>
                   <a className="proj-link link-outline" href="https://github.com/renata-fiona/animal-match-app"
                   >GitHub</a>
                 </div>
-              </div>
             </div>
           </div>
         </div>
