@@ -171,7 +171,7 @@
   }
 
   .home-section {
-    padding: 20% 0 12%;
+    padding: 19% 0 6%;
   }
 
   .heading-cont {
@@ -192,6 +192,7 @@
 
   .heading-cont {
     order: 2;
+
   }
 
   .home-pie {
@@ -396,6 +397,8 @@
 
     a.link-outline {
       font-size: $fs-default;
+      width: 100%;
+      text-align: center;
     }
 
   }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // Pages
 import Contact from '../Pages/Contact';
 // Assets
-import DesktopView from "../assets/desktop-view-by-covene.webp";
+import DesktopView from "../assets/desktop-view-by-covene.jpg";
 import Pie from "../assets/shapes/quarter-circle-shape-red.svg";
 import SoftSquare from "../assets/shapes/curve-shape-light-pink.svg";
 import ArrowSquarePoint from "../assets/shapes/arrow-square-point.svg";
