@@ -1,14 +1,31 @@
+// Modules
+import { useSpring, animated } from '@react-spring/web'
 // Assets
 import { FaReact, FaCss3Alt, FaHtml5, FaSass, FaGithub, FaUniversalAccess } from "react-icons/fa";
 import { SiJavascript, SiFirebase } from "react-icons/si";
 
 const Skills = () => {
+  const flip = false;
+  const fade300 = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    reset: true,
+    reverse: flip,
+    delay: 300
+  });
+  const fade500 = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    reset: true,
+    reverse: flip,
+    delay: 500
+  });
   return (
     <>
       <section  className="skills-section" id="skills">
         <div  className="wrapper skills-container">
-          <h3  className="skills-heading">Skills</h3>
-          <div  className="skills-icon-container">
+          <animated.h3 style={fade300}  className="skills-heading">Skills</animated.h3>
+          <animated.div style={fade500} className="skills-icon-container">
             <div  className="icon-box">
               <FaReact className="brand-icon" />
               <p>React</p>
@@ -41,7 +58,7 @@ const Skills = () => {
               <FaUniversalAccess className="brand-icon" />
               <p>Accessibility</p>
             </div>
-          </div>
+          </animated.div>
         </div>
       </section>
     </>
