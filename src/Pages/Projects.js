@@ -1,3 +1,5 @@
+// Modules
+import { useSpring, animated } from '@react-spring/web'
 // Assets
 import JobiApp from "../assets/fiona-freemark-jobi-app-ipad-iphone.jpg"
 import AnimalMatch from "../assets/animal-match-project-thumbnail-photo-by-sami-aksu-horizontal-ipad-iphone.jpg"
@@ -5,13 +7,28 @@ import DailyTarot from "../assets/fiona-freemark-the-daily-tarot-ipad-iphone.jpg
 import Creative from "../assets/fiona-freemark-creative-brand-project-ipad-iphone.jpg"
 import VotingApp from "../assets/fiona-freemark-whatever-floats-your-vote-project-ipad-iphone.jpg"
 
-function Projects() {
+const Projects = () => {
+  const flip = false;
+  const fade300 = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    reset: true,
+    reverse: flip,
+    delay: 300
+  });
+  const fade500 = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    reset: true,
+    reverse: flip,
+    delay: 500
+  });
   return (
     <>
       <section className="projects-section" id="projects">
         <div className="wrapper proj-outer-box">
-          <h3 className="proj-heading">Projects</h3>
-          <div className="proj-container">
+          <animated.h3 style={fade300} className="proj-heading">Projects</animated.h3>
+          <animated.div style={fade500} className="proj-container">
             <div className="proj-box">
               <div className="proj-img-container">
                 <a href="https://jobi-app.netlify.app/" className="img-link">
@@ -166,7 +183,7 @@ function Projects() {
                   >GitHub</a>
                 </div>
             </div>
-          </div>
+          </animated.div>
         </div>
       </section>
     </>

@@ -1,10 +1,20 @@
+// Modules
+import { useSpring, animated } from '@react-spring/web'
 // Assets
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
+  const flip = false;
+  const fade300 = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    reset: true,
+    reverse: flip,
+    delay: 300
+  });
   return (
       <footer>
-        <div  className="wrapper footer-container">
+        <animated.div style={fade300}  className="wrapper footer-container">
           <p> Fiona Freemark &copy; 2023</p>
           <div className="footer-icon-box">
           <a href="https://www.linkedin.com/in/fiona-freemark/" title="linked in" className="footer-social-icon-box" target="_blank" rel="noreferrer">
@@ -17,7 +27,7 @@ const Footer = () => {
               <FaEnvelope className="footer-social-icon" />
             </a>
           </div>
-        </div> 
+        </animated.div> 
       </footer>
   )
 };
