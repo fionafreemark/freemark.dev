@@ -1,6 +1,9 @@
 // Modules
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 // Pages
 import Home from '../Pages/Home';
 import About from '../Pages/About';
@@ -35,13 +38,38 @@ const MobileNav = () => {
     setNavVisibility("nav-ul unclicked");
     setIsMenuClicked(false);
   };
+
+
+  // Scroll Animations
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const fadeVariant2 = {
+    visible: { opacity: 1, transition: { duration: 0.8 }, y: 0 },
+    hidden: { opacity: 0, y: 100 },
+  }
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+    else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
+
   return (
     <nav className="mobile-nav">
       <button className={navMenuClass} onClick={updateMenu} alt="menu button" aria-label="menu-button" >
         <AiOutlinePlus className={navButtonClass} />
       </button>
       <div className={navVisibility} >
-          <ul className="nav-ul">
+          <motion.ul 
+          ref={ref}
+          variants={fadeVariant2}
+          initial="hidden"
+          animate={control} className="nav-ul">
             <li>
               <Link className="menu-link" to={'/'} element={<Home />} onClick={closeMenu}>Home</Link>
             </li>
@@ -54,7 +82,7 @@ const MobileNav = () => {
             <li>
               <Link className="menu-link" to={'/contact'} element={<Contact />} onClick={closeMenu}>Contact</Link>
             </li>
-          </ul>
+          </motion.ul>
       </div>
     </nav>
   )

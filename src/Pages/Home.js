@@ -1,7 +1,8 @@
 // Modules
 import { Link } from "react-router-dom";
-import { useSpring, animated } from '@react-spring/web'
-// import { useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 // Pages
 import Contact from '../Pages/Contact';
 // Assets
@@ -12,40 +13,72 @@ import ArrowSquarePoint from "../assets/shapes/arrow-square-point.svg";
 import ArrowSquare from "../assets/shapes/arrow-square.svg";
 
 const Home = () => {
-  const flip = false;
-  const fade300 = useSpring({
-    to: { opacity: 1 },
-    from: { opacity: 0 },
-    reset: true,
-    reverse: flip,
-    delay: 300
-  });
-  const fade500 = useSpring({
-    to: { opacity: 1 },
-    from: { opacity: 0 },
-    reset: true,
-    reverse: flip,
-    delay: 500
-  });
+  // Scroll Animations
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const fadeVariant = {
+    visible: { opacity: 1, transition: { duration: 0.5 }},
+    hidden: { opacity: 0},
+  }
+  const fadeVariant2 = {
+    visible: { opacity: 1, transition: { duration: 1.2 } },
+    hidden: { opacity: 0},
+  }
+  const fadeVariant3 = {
+    visible: { opacity: 1, transition: { duration: 1.2 }, y: 0 },
+    hidden: { opacity: 0, y: 100},
+  }
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+    else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
 
   return (
     <section className="home-section wrapper">
-      <animated.div style={fade300} className="heading-cont">
+      <motion.div
+        ref={ref}
+        variants={fadeVariant}
+        initial="hidden"
+        animate={control}
+        className="heading-cont">
         <h2>Fiona Freemark</h2>
         <h3>Front-End Developer | Artist</h3>
-        <animated.div style={fade500}>
+        <motion.div
+          ref={ref}
+          variants={fadeVariant3}
+          initial="hidden"
+          animate={control}>
           <Link className="link-outline" to={'/contact'} element={<Contact />}>Get in Touch</Link>
-        </animated.div>
-      </animated.div>
-      <animated.div style={fade300} className="heading-img-cont">
-        <img src={DesktopView} alt="Desktop scene with laptop and pink notebook." className="desktop-img" />
-        <animated.div style={fade500}>
+        </motion.div>
+      </motion.div>
+      <div
+        className="heading-img-cont">
+        <motion.img
+          ref={ref}
+          variants={fadeVariant}
+          initial="hidden"
+          animate={control}
+          src={DesktopView}
+          alt="Desktop scene with laptop and pink notebook."
+          className="desktop-img"
+        />
+        <motion.div
+          ref={ref}
+          variants={fadeVariant2}
+          initial="hidden"
+          animate={control}>
           <img src={Pie} alt="" className="shape home-pie" />
           <img src={SoftSquare} alt="" className="shape home-soft-square" />
           <img src={ArrowSquarePoint} alt="" className="arrow home-arrow-point" />
           <img src={ArrowSquare} alt="" className="arrow home-arrow-square" />
-        </animated.div>
-      </animated.div>
+        </motion.div>
+      </div>
     </section>
   )
 };

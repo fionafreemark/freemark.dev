@@ -1,5 +1,7 @@
 // Modules
-import { useSpring, animated } from '@react-spring/web'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 // Assets
 import JobiApp from "../assets/fiona-freemark-jobi-app-ipad-iphone.jpg"
 import AnimalMatch from "../assets/animal-match-project-thumbnail-photo-by-sami-aksu-horizontal-ipad-iphone.jpg"
@@ -8,28 +10,59 @@ import Creative from "../assets/fiona-freemark-creative-brand-project-ipad-iphon
 import VotingApp from "../assets/fiona-freemark-whatever-floats-your-vote-project-ipad-iphone.jpg"
 
 const Projects = () => {
-  const flip = false;
-  const fade300 = useSpring({
-    to: { opacity: 1 },
-    from: { opacity: 0 },
-    reset: true,
-    reverse: flip,
-    delay: 300
-  });
-  const fade500 = useSpring({
-    to: { opacity: 1 },
-    from: { opacity: 0 },
-    reset: true,
-    reverse: flip,
-    delay: 500
-  });
+  // Scroll Animations
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const fadeVariant = {
+    visible: { opacity: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0 },
+  }
+  const fadeVariant2 = {
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        // delay: 0.5,
+        // when: "beforeChildren",
+        staggerChildren: 0.3
+      },
+      y: 0
+    },
+    hidden: { opacity: 0, y: 100 },
+  }
+  const fadeVariantChild = {
+    visible: { opacity: 1},
+    hidden: { opacity: 0},
+  }
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+    else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return (
     <>
       <section className="projects-section" id="projects">
         <div className="wrapper proj-outer-box">
-          <animated.h3 style={fade300} className="proj-heading">Projects</animated.h3>
-          <animated.div style={fade500} className="proj-container">
-            <div className="proj-box">
+          <motion.h3
+            ref={ref}
+            variants={fadeVariant}
+            initial="hidden"
+            animate={control}
+            className="proj-heading">
+            Projects
+          </motion.h3>
+          <motion.div
+            ref={ref}
+            variants={fadeVariant2}
+            initial="hidden"
+            animate={control}
+            className="proj-container">
+            <motion.div variants={fadeVariantChild} className="proj-box">
               <div className="proj-img-container">
                 <a href="https://jobi-app.netlify.app/" className="img-link">
                   <img className="creative-img" src={JobiApp}
@@ -54,15 +87,15 @@ const Projects = () => {
                   <li>HTML</li>
                 </ul>
               </div>
-                <div className="proj-link-container">
-                  <a className="proj-link link-outline" href="https://jobi-app.netlify.app/"
-                  >Live
-                    Site</a>
-                  <a className="proj-link link-outline" href="https://github.com/fionafreemark/jobi-job-search-app"
-                  >GitHub</a>
-                </div>
-            </div>
-            <div className="proj-box">
+              <div className="proj-link-container">
+                <a className="proj-link link-outline" href="https://jobi-app.netlify.app/"
+                >Live
+                  Site</a>
+                <a className="proj-link link-outline" href="https://github.com/fionafreemark/jobi-job-search-app"
+                >GitHub</a>
+              </div>
+            </motion.div>
+            <motion.div variants={fadeVariantChild} className="proj-box">
               <div className="proj-img-container">
                 <a href="https://whateverfloatsyourvote.netlify.app/" className="img-link">
                   <img className="creative-img" src={VotingApp}
@@ -87,15 +120,15 @@ const Projects = () => {
                   <li>HTML</li>
                 </ul>
               </div>
-                <div className="proj-link-container">
-                  <a className="proj-link link-outline" href="https://whateverfloatsyourvote.netlify.app/"
-                  >Live
-                    Site</a>
-                  <a className="proj-link link-outline" href="https://github.com/fionafreemark/whatever-floats-your-vote"
-                  >GitHub</a>
-                </div>
-            </div>
-            <div className="proj-box">
+              <div className="proj-link-container">
+                <a className="proj-link link-outline" href="https://whateverfloatsyourvote.netlify.app/"
+                >Live
+                  Site</a>
+                <a className="proj-link link-outline" href="https://github.com/fionafreemark/whatever-floats-your-vote"
+                >GitHub</a>
+              </div>
+            </motion.div>
+            <motion.div variants={fadeVariantChild} className="proj-box">
               <div className="proj-img-container">
                 <a href="https://the-daily-tarot.netlify.app/" className="img-link">
                   <img className="creative-img" src={DailyTarot}
@@ -119,14 +152,14 @@ const Projects = () => {
                   <li>HTML</li>
                 </ul>
               </div>
-                <div className="proj-link-container">
-                  <a className="proj-link link-outline" href="https://the-daily-tarot.netlify.app/"  >Live
-                    Site</a>
-                  <a className="proj-link link-outline" href="https://github.com/fionafreemark/the-daily-tarot"
-                  >GitHub</a>
-                </div>
-            </div>
-            <div className="proj-box">
+              <div className="proj-link-container">
+                <a className="proj-link link-outline" href="https://the-daily-tarot.netlify.app/"  >Live
+                  Site</a>
+                <a className="proj-link link-outline" href="https://github.com/fionafreemark/the-daily-tarot"
+                >GitHub</a>
+              </div>
+            </motion.div>
+            <motion.div variants={fadeVariantChild} className="proj-box">
               <div className="proj-img-container">
                 <a href="https://creative-brand-design.netlify.app/" className="img-link">
                   <img className="creative-img" src={Creative}
@@ -147,14 +180,14 @@ const Projects = () => {
                   <li>GitHub</li>
                 </ul>
               </div>
-                <div className="proj-link-container">
-                  <a className="proj-link link-outline" href="https://creative-brand-design.netlify.app/" >Live
-                    Site</a>
-                  <a className="proj-link link-outline" href="https://github.com/fionafreemark/creative-brand-design"
-                  >GitHub</a>
-                </div>
-            </div>
-            <div className="proj-box">
+              <div className="proj-link-container">
+                <a className="proj-link link-outline" href="https://creative-brand-design.netlify.app/" >Live
+                  Site</a>
+                <a className="proj-link link-outline" href="https://github.com/fionafreemark/creative-brand-design"
+                >GitHub</a>
+              </div>
+            </motion.div>
+            <motion.div variants={fadeVariantChild} className="proj-box">
               <div className="proj-img-container">
                 <a href="https://animal-match-app.netlify.app/" className="img-link">
                   <img className="animal-match-img"
@@ -176,14 +209,14 @@ const Projects = () => {
                   <li>GitHub</li>
                 </ul>
               </div>
-                <div className="proj-link-container">
-                  <a className="proj-link link-outline" href="https://animal-match-app.netlify.app/"  >Live
-                    Site</a>
-                  <a className="proj-link link-outline" href="https://github.com/renata-fiona/animal-match-app"
-                  >GitHub</a>
-                </div>
-            </div>
-          </animated.div>
+              <div className="proj-link-container">
+                <a className="proj-link link-outline" href="https://animal-match-app.netlify.app/"  >Live
+                  Site</a>
+                <a className="proj-link link-outline" href="https://github.com/renata-fiona/animal-match-app"
+                >GitHub</a>
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
     </>
