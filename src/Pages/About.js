@@ -77,7 +77,8 @@ function About() {
           ref={ref}
           variants={fadeVariant3}
           initial="hidden"
-          animate={control} className="scroll-btn">
+          animate={control}
+          className="scroll-btn">
           <a href="#skills">
             <TfiArrowCircleDown className='down-arrow-btn' />
           </a>

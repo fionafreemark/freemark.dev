@@ -18,7 +18,7 @@ const Home = () => {
   const [ref, inView] = useInView();
 
   const fadeVariant = {
-    visible: { opacity: 1, transition: { duration: 0.5 }},
+    visible: { opacity: 1, transition: { duration: 0.9 }},
     hidden: { opacity: 0},
   }
   const fadeVariant2 = {
