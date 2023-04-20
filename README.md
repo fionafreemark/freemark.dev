@@ -10,6 +10,7 @@
 ## Packages Installed
 - [Sass](https://www.npmjs.com/package/sass)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- Framer Motion
 
 
 ## Image Credits
