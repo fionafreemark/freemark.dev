@@ -3,14 +3,16 @@
 // ABOUT ME SECTION -----------------------------------
 
 .about-me-section {
-  padding: 10% 0 5%;
+  // padding: 12% 0 5%;
   background-color: $white;
-  min-height: 80vh;
+    min-height: 100vh;
 }
 
 .about-me-container {
   position: relative;
   display: flex;
+  align-items: center;
+  min-height: 85vh;
 }
 
 .about-me-img-container {
@@ -33,6 +35,10 @@
 .about-me-heading {
   color: $black;
   margin-bottom: 3%;
+}
+
+.about-me-h4 {
+  margin: 3% 0 2%;
 }
 
 .about-me-text-container {
@@ -72,9 +78,16 @@
 }
 
 .scroll-btn {
-  width: 100%;
-  text-align: center;
-  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 100%;
+padding: 0 0 4em;
+
+  a {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .down-arrow-btn {

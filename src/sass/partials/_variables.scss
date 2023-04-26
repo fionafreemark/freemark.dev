@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 // Colours
 $transparent: #00000000;
@@ -14,17 +14,20 @@ $fs-global: 62.5%;
 $fs-4xl: 10rem; 
 $fs-3xl: 8rem; 
 $fs-2xl: 6rem;
-$fs-xl: 5rem;
+$fs-xl: 4.8rem;
 $fs-lrg: 2.9rem;
 $fs-med: 2.2rem;
 $fs-small: 2rem;
+$fs-xs: 1.8rem;
 $fs-default: 1.6rem;
 
 // Font Weights
-$fw-default: 300;
-$fw-semi-bold: 400;
-$fw-bold: 700;
+$fw-default: 400;
+$fw-semi-bold: 500;
+$fw-bold: 600;
 
 // Font Family
-$ff-headings: 'Open Sans', sans-serif; /* 400, 700*/
-$ff-body: 'Bitter',serif; /* in 300/400/700 */
+$ff-headings: 'Montserrat', sans-serif; /* 400, 700*/
+$ff-body: 'Montserrat',
+sans-serif;
+/* 400, 700*/

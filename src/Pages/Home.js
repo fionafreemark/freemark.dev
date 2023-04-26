@@ -41,12 +41,7 @@ const Home = () => {
 
   return (
     <section className="home-section wrapper">
-      <motion.div
-        ref={ref}
-        variants={fadeVariant}
-        initial="hidden"
-        animate={control}
-        className="heading-cont">
+      <div className="heading-cont">
         <h2>Fiona Freemark</h2>
         <h3>Front-End Developer | Artist</h3>
         <motion.div
@@ -56,7 +51,7 @@ const Home = () => {
           animate={control}>
           <Link className="link-outline" to={'/contact'} element={<Contact />}>Get in Touch</Link>
         </motion.div>
-      </motion.div>
+      </div>
       <div
         className="heading-img-cont">
         <motion.img
