@@ -10,6 +10,8 @@ import Home from '../Pages/Home';
 import About from '../Pages/About';
 import Projects from '../Pages/Projects';
 import Contact from '../Pages/Contact';
+// Assets
+import resume from '../assets/docs/fiona-freemark-resume.pdf';
 
 const Nav = () => {
   // Scroll Animations
@@ -54,6 +56,9 @@ const Nav = () => {
               </li>
               <li>
                 <Link className="menu-link" to={'/projects'} element={<Projects />}>Projects</Link>
+              </li>
+              <li>
+                <a className="menu-link" href={resume} download="fiona-freemark-resume.pdf" target="_blank" rel='noreferrer' >Resume</a>
               </li>
               <li>
                 <Link className="menu-link" to={'/contact'} element={<Contact />}>Contact</Link>

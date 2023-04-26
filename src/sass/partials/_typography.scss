@@ -16,6 +16,8 @@ h5 {
 
 h1 {
     font-size: $fs-lrg;
+    text-transform: uppercase;
+    letter-spacing: -.05em;
 
 }
 
@@ -27,8 +29,10 @@ h3 {
 }
 
 h2 {
-    font-size: $fs-4xl;
+    font-size: $fs-3xl;
     margin-bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: -.05em;
 }
 
 h4 {

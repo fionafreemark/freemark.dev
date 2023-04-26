@@ -11,6 +11,7 @@ import Projects from '../Pages/Projects';
 import Contact from '../Pages/Contact';
 //Assets
 import { AiOutlinePlus } from "react-icons/ai";
+import resume from '../assets/docs/fiona-freemark-resume.pdf';
 
 const MobileNav = () => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -79,6 +80,9 @@ const MobileNav = () => {
             <li>
               <Link className="menu-link" to={'/projects'} element={<Projects />} onClick={closeMenu}>Projects</Link>
             </li>
+          <li>
+            <a className="menu-link" href={resume} download="fiona-freemark-resume.pdf" target="_blank" rel='noreferrer' >Resume</a>
+          </li>
             <li>
               <Link className="menu-link" to={'/contact'} element={<Contact />} onClick={closeMenu}>Contact</Link>
             </li>

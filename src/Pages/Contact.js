@@ -3,7 +3,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 // Assets
-import { FaGithub, FaLinkedin, FaEnvelope, FaCalendarCheck } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaCalendarCheck, FaFileDownload } from "react-icons/fa";
+import resume from '../assets/docs/fiona-freemark-resume.pdf';
 
 const Contact = () => {
   // Scroll Animations
@@ -48,7 +49,7 @@ const Contact = () => {
                 variants={fadeVariant2}
                 initial="hidden"
                 animate={control}
-                className="contact-body"> Let's work together. Send me a message or contact me at the links below! </motion.p>
+                className="contact-body"> Thank you for visiting my portfolio. I am currently open to new opportunities and would love to hear about your project. Please feel free to send me a message using the form below, and I'll get back to you as soon as possible! </motion.p>
               <motion.div
                 ref={ref}
                 variants={fadeVariant2}
@@ -67,6 +68,7 @@ const Contact = () => {
                 <a href="https://calendly.com/fionafreemark/15-minute-chat" title="book a chat" className="social-icon-box" target="_blank" rel="noreferrer">
                   <FaCalendarCheck className="social-icon" />
                 </a>
+                <a className="menu-link" href={resume} title="download resume" download="fiona-freemark-resume.pdf" target="_blank" rel='noreferrer' ><FaFileDownload className="social-icon" /></a>
               </motion.div>
             </div>
           </div>
