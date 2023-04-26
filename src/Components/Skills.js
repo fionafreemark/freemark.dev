@@ -3,8 +3,10 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 // Assets
-import { FaReact, FaCss3Alt, FaHtml5, FaSass, FaGithub, FaUniversalAccess } from "react-icons/fa";
-import { SiJavascript, SiFirebase } from "react-icons/si";
+import { FaReact, FaCss3Alt, FaHtml5, FaSass, FaGithub, FaUniversalAccess, FaSquarespace } from "react-icons/fa";
+import { SiFirebase, SiAdobelightroom, SiAdobephotoshop } from "react-icons/si";
+import { DiJavascript1} from "react-icons/di";
+import { CgFigma } from "react-icons/cg";
 
 const Skills = () => {
   // Scroll Animations
@@ -69,7 +71,7 @@ const Skills = () => {
               initial="hidden"
               animate={control} 
               className="icon-box">
-              <SiJavascript className="brand-icon" />
+              <DiJavascript1 className="brand-icon" />
               <p>JavaScript</p>
             </motion.div>
           <motion.div
@@ -125,6 +127,42 @@ const Skills = () => {
           className="icon-box">
               <FaUniversalAccess className="brand-icon" />
               <p>Accessibility</p>
+            </motion.div>
+        <motion.div
+          ref={ref}
+          variants={fadeVariant5}
+          initial="hidden"
+          animate={control}
+          className="icon-box">
+              <SiAdobephotoshop className="brand-icon" />
+              <p>Photoshop</p>
+            </motion.div>
+        <motion.div
+          ref={ref}
+          variants={fadeVariant5}
+          initial="hidden"
+          animate={control}
+          className="icon-box">
+              <SiAdobelightroom className="brand-icon" />
+              <p>Lightroom</p>
+            </motion.div>
+        <motion.div
+          ref={ref}
+          variants={fadeVariant5}
+          initial="hidden"
+          animate={control}
+          className="icon-box">
+              <CgFigma className="brand-icon" />
+              <p>Figma</p>
+            </motion.div>
+        <motion.div
+          ref={ref}
+          variants={fadeVariant5}
+          initial="hidden"
+          animate={control}
+          className="icon-box">
+              <FaSquarespace className="brand-icon" />
+              <p>Squarespace</p>
             </motion.div>
           </div>
         </div>

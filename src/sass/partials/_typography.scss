@@ -20,7 +20,7 @@ h1 {
 }
 
 h3 {
-    font-size: $fs-2xl;
+    font-size: $fs-xl;
     font-weight: $fw-bold;
     font-family: $ff-headings;
     color: $black;
@@ -48,8 +48,8 @@ li,
 input[type="email"],
 input[type="text"] {
     font-family: $ff-body;
-    font-weight: $fw-semi-bold;
-    font-size: $fs-small;
+    font-weight: $fw-default;
+    font-size: $fs-xs;
     color: $black;
 }
 
