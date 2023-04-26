@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Rubik:wght@300&display=swap');
 
 // Colours
 $transparent: #00000000;
@@ -22,12 +22,11 @@ $fs-xs: 1.8rem;
 $fs-default: 1.6rem;
 
 // Font Weights
-$fw-default: 400;
-$fw-semi-bold: 500;
-$fw-bold: 600;
+$fw-default: 300;
+$fw-semi-bold: 400;
+$fw-bold: 300;
 
 // Font Family
-$ff-headings: 'Montserrat', sans-serif; /* 400, 700*/
-$ff-body: 'Montserrat',
-sans-serif;
-/* 400, 700*/
+$ff-headings: 'Rubik', sans-serif; 
+$ff-body: 'Lato', sans-serif;
+

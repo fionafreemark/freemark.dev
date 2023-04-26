@@ -43,7 +43,7 @@ const Home = () => {
     <section className="home-section wrapper">
       <div className="heading-cont">
         <h2>Fiona Freemark</h2>
-        <h3>Front-End Developer | Artist</h3>
+        <h3>Front-End Developer</h3>
         <motion.div
           ref={ref}
           variants={fadeVariant3}

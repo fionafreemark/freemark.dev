@@ -143,9 +143,7 @@
 @media (max-width: 800px) {
 
   // GLOBAL STYLES ----------
-  h2 {
-    font-size: $fs-xl;
-  }
+
 
   h3 {
     text-align: center;
@@ -183,7 +181,7 @@
   .heading-img-cont {
     width: 300px;
     height: 380px;
-    margin-bottom: 2em;
+    margin: 0 auto 2em auto;
 
     .desktop-img {
       width: 270px;
@@ -193,7 +191,15 @@
 
   .heading-cont {
     order: 2;
+  }
 
+  .home-section {
+    h2 {
+      font-size: $fs-xl;
+      &::after {
+        width: 100%;
+      }
+    }
   }
 
   .home-pie {
@@ -224,6 +230,7 @@
   .about-me-img-container {
     flex-basis: 100%;
     width: 80%;
+    margin-top: 18%;
   }
 
   .about-me-text-container {

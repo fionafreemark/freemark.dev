@@ -7,19 +7,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: calc(100vh - 55px);
+  min-height: calc(100vh - 51px);
   padding: 10% 0 5% 0;
   background-color: $white;
 
   h2 {
     margin-bottom: 0.4em;
+    &::after {
+      content: "";
+      display: block;
+      text-align: left;
+      width: 90%;
+      height: 2px;
+      background-color: $pink;
+    }
   }
 
   h3 {
     font-family: $ff-body;
     font-weight: $fw-semi-bold;
     font-size: $fs-lrg;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -29,6 +37,8 @@
   justify-content: center;
   align-items: flex-start;
   width: 45%;
+
+  max-height: 600px;
 }
 
 .heading-img-cont {
@@ -41,6 +51,7 @@
   margin-left: auto;
 
   .desktop-img {
+
     object-position: 20% 70%;
     object-fit: cover;
     width: 450px;
