@@ -58,8 +58,8 @@
   // HOME PAGE ----------
 
   .home-section {
+    min-height: calc(100vh - 119px);
 
-    min-height: calc(100vh - 49px);
     h3 {
       font-size: $fs-med;
     }
@@ -171,7 +171,8 @@
   }
 
   .home-section {
-    padding: 19% 0 6%;
+    justify-content: center;
+    align-items: center;
   }
 
   .heading-cont {
@@ -197,6 +198,7 @@
   .home-section {
     h2 {
       font-size: $fs-xl;
+
       &::after {
         width: 100%;
       }
@@ -374,10 +376,6 @@
 
   // NAV/HEADING ------------
 
-  .home-section {
-    min-height: calc(100vh - 88px);
-  }
-
   .nav-menu {
 
     &.unclicked,
@@ -396,6 +394,11 @@
     }
   }
 
+  
+  // HOME SECTION ----------
+  .home-section {
+    min-height: calc(100vh - 152px);
+  }
   .heading-cont {
     h2 {
       font-size: $fs-lrg;
@@ -414,11 +417,11 @@
 
   }
 
-  // HOME SECTION ----------
-    .home-section {
-      min-height: calc(100vh - 82px);
-    }
+  .heading-img-cont {
+    margin: 0 auto;
+  }
 
+  
   // ABOUT ME SECTION ----------
   .about-me-section {
     padding: 25% 0 20% 0;

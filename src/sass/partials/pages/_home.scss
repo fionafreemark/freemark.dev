@@ -6,9 +6,10 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  min-height: calc(100vh - 50.5px);
-  padding: 8% 0 0 0;
+  min-height: calc(100vh - 121px);
+  margin-top: 70px;
   background-color: $white;
 
   h2 {
