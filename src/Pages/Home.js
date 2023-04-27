@@ -1,10 +1,7 @@
 // Modules
-import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-// Pages
-import Contact from '../Pages/Contact';
 // Assets
 import DesktopView from "../assets/desktop-view-by-covene.jpg";
 import Pie from "../assets/shapes/quarter-circle-shape-red.svg";
@@ -49,7 +46,7 @@ const Home = () => {
           variants={fadeVariant3}
           initial="hidden"
           animate={control}>
-          <Link className="link-outline" to={'/contact'} element={<Contact />}>Get in Touch</Link>
+          <a href="mailto:freemark.dev@gmail.com" title="Email Me" className="link-outline" target="_blank" rel="noreferrer">Get in Touch</a>
         </motion.div>
       </div>
       <div

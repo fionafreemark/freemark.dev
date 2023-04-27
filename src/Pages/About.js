@@ -18,9 +18,9 @@ function About() {
               Hi, my name is Fiona!</h4>
             <div>
               <p className="about-me-text">
-                I'm a front-end developer with over <span className="bold-link">11 years of experience in the arts,</span> bringing a unique blend of creative and technical skills to the tech world. My passion for building <span className="bold-link">accessible and responsive code</span> is matched only by my <span className="bold-link">keen eye for design and unwavering attention to detail.</span></p>
+                I'm a <span className="bold-link">front-end developer</span> with over <span className="bold-link">11 years of experience in the arts,</span> bringing a unique blend of <span className="bold-link">creative and technical skills</span> to the tech world. My passion for building <span className="bold-link">accessible and responsive code</span> is matched only by my <span className="bold-link">keen eye for design and unwavering attention to detail.</span></p>
               <p className="about-me-text">
-                I am <span className="bold-link">creative problem solver and motivated team player</span> who thrives in fast-paced, dynamic environments. I am actively <span className="bold-link">seeking new work opportunities</span> and I'm open to in-office, hybrid, and remote positions that will allow me to continue to grow and develop as a professional.</p>
+                I am <span className="bold-link">creative problem solver and motivated team player</span> who thrives in fast-paced, dynamic environments. I am actively <span className="bold-link">seeking new work opportunities</span> and I'm <span className="bold-link">open to in-office, hybrid, and remote positions</span> that will allow me to continue to grow and develop as a professional.</p>
             </div>
           </div>
           <div
@@ -31,7 +31,7 @@ function About() {
         </div>
         <div className="scroll-btn">
           <a href="#skills">
-            <TfiArrowCircleDown className='down-arrow-btn' />
+            <TfiArrowCircleDown className='down-arrow-btn' title="scroll"/>
           </a>
         </div>
       </section>
