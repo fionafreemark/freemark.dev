@@ -7,8 +7,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: calc(100vh - 51px);
-  padding: 10% 0 5% 0;
+  min-height: calc(100vh - 50.5px);
+  padding: 8% 0 0 0;
   background-color: $white;
 
   h2 {
@@ -36,7 +36,6 @@
   justify-content: center;
   align-items: flex-start;
   width: 45%;
-
   max-height: 600px;
 }
 

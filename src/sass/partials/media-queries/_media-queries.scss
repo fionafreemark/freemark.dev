@@ -59,6 +59,7 @@
 
   .home-section {
 
+    min-height: calc(100vh - 49px);
     h3 {
       font-size: $fs-med;
     }
@@ -350,11 +351,11 @@
 
   // GLOBAL STYLES ----------
   h1 {
-    font-size: $fs-small;
+    // font-size: $fs-small;
   }
 
   .h1-link {
-    margin: 4% 0 0 0;
+    // margin: 4% 0 0 0;
   }
 
   h3 {
@@ -381,7 +382,8 @@
 
     &.unclicked,
     &.clicked {
-      right: 1.66em;
+      top: 1.7rem;
+      right: 1.57em;
     }
   }
 
@@ -389,6 +391,7 @@
 
     &.unclicked,
     &.clicked {
+      top: 1.7rem;
       right: 3.5rem;
     }
   }
@@ -410,6 +413,11 @@
     }
 
   }
+
+  // HOME SECTION ----------
+    .home-section {
+      min-height: calc(100vh - 82px);
+    }
 
   // ABOUT ME SECTION ----------
   .about-me-section {

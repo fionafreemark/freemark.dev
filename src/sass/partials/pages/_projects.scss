@@ -2,8 +2,8 @@
 
 // PROJECTS SECTION ----------------------------------
 .projects-section {
-  min-height: calc(100vh - 55px);
-  padding: 10% 0;
+  min-height: calc(100vh - 50px);
+  padding: 10% 0 3%;
   background-color: $white;
 }
 
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 45%;
-  margin: 5% 0;
+  margin: 2% 0;
   border: 3px solid $grey;
   transition: 300ms;
 
@@ -41,16 +41,17 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 390px;
-  padding: 5%;
+  padding: 5% 5% 1% ;
+  min-height: 250px;
 }
 
 .vote-proj-text {
-  min-height: 503px;
+  min-height: 270px;
 }
 
+
 .proj-link-container {
-  padding: 5%;
+  padding: 1% 5% 5%;
 }
 
 .proj-desc,
@@ -67,7 +68,7 @@
     padding-right: 2%;
     text-transform: uppercase;
     font-weight: $fw-semi-bold;
-    font-size: $fs-small;
+    font-size: $fs-xs;
     color: $black;
   }
 }

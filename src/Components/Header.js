@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       {/* Skip Link */}
       <a href="#main" className="skip-link">Skip to main content.</a>
-      <div className="wrapper">
+      <div className="nav-wrapper">
         <Nav />
       </div>
     </header>
