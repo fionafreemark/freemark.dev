@@ -49,7 +49,7 @@ const Contact = () => {
                 variants={fadeVariant2}
                 initial="hidden"
                 animate={control}
-                className="contact-body"> Thank you for visiting my portfolio. I am currently open to new opportunities and would love to hear about your project. Please feel free to send me a message using the form below, and I'll get back to you as soon as possible! </motion.p>
+                className="contact-body"> Thank you for visiting my portfolio. I am currently open to new opportunities and would love to hear about your project. Feel free to send me a message or connect via the links! </motion.p>
               <motion.div
                 ref={ref}
                 variants={fadeVariant2}

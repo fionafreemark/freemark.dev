@@ -79,6 +79,15 @@ html {
 	scale: 0.9;
 }
 
+.body-link {
+	font-family: $ff-body;
+	font-size: $fs-xs;
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
 // Global Shape Styles
 
 .shape {

@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 // Assets
-import DesktopView from "../assets/desktop-view-by-covene.jpg";
+import DesktopView from "../assets/laptop-on-dining-table.png";
 import Pie from "../assets/shapes/quarter-circle-shape-red.svg";
 import SoftSquare from "../assets/shapes/curve-shape-light-pink.svg";
 import ArrowSquarePoint from "../assets/shapes/arrow-square-point.svg";
