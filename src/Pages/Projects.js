@@ -52,7 +52,7 @@ const Projects = () => {
             className="proj-container">
             <div className="proj-box">
               <div className="proj-img-container">
-                <a href="https://jobi-app.netlify.app/" className="img-link">
+                <a href="https://jobi-app.netlify.app/" className="img-link" target='_blank' rel="noreferrer">
                   <img className="creative-img" src={JobiApp}
                     alt="Ipad and iphone on table displaying the jobi app website." />
                 </a>
@@ -70,16 +70,16 @@ const Projects = () => {
                 </ul>
               </div>
               <div className="proj-link-container">
-                <a className="proj-link link-outline" href="https://jobi-app.netlify.app/"
+                <a className="proj-link link-outline" href="https://jobi-app.netlify.app/" target='_blank' rel="noreferrer"
                 >Live
                   Site</a>
-                <a className="proj-link link-outline" href="https://github.com/fionafreemark/jobi-job-search-app"
+                <a className="proj-link link-outline" href="https://github.com/fionafreemark/jobi-job-search-app" target='_blank' rel="noreferrer"
                 >GitHub</a>
               </div>
             </div>
             <div className="proj-box">
               <div className="proj-img-container">
-                <a href="https://whateverfloatsyourvote.netlify.app/" className="img-link">
+                <a href="https://whateverfloatsyourvote.netlify.app/" className="img-link" target='_blank' rel="noreferrer">
                   <img className="creative-img" src={VotingApp}
                     alt="Screenshot of the 'Whatever Floats your Vote' app with an illustration of a ballot box." />
                 </a>
@@ -98,16 +98,16 @@ const Projects = () => {
                 </ul>
               </div>
               <div className="proj-link-container">
-                <a className="proj-link link-outline" href="https://whateverfloatsyourvote.netlify.app/"
+                <a className="proj-link link-outline" href="https://whateverfloatsyourvote.netlify.app/" target='_blank' rel="noreferrer"
                 >Live
                   Site</a>
-                <a className="proj-link link-outline" href="https://github.com/fionafreemark/whatever-floats-your-vote"
+                <a className="proj-link link-outline" href="https://github.com/fionafreemark/whatever-floats-your-vote" target='_blank' rel="noreferrer"
                 >GitHub</a>
               </div>
             </div>
             <div className="proj-box">
               <div className="proj-img-container">
-                <a href="https://the-daily-tarot.netlify.app/" className="img-link">
+                <a href="https://the-daily-tarot.netlify.app/" className="img-link" target='_blank' rel="noreferrer">
                   <img className="creative-img" src={DailyTarot}
                     alt="'The Daily Tarot' website, depicting app instructions and tarot cards splayed across the background." />
                 </a>
@@ -126,15 +126,15 @@ const Projects = () => {
                 </ul>
               </div>
               <div className="proj-link-container">
-                <a className="proj-link link-outline" href="https://the-daily-tarot.netlify.app/"  >Live
+                <a className="proj-link link-outline" href="https://the-daily-tarot.netlify.app/" target='_blank' rel="noreferrer" >Live
                   Site</a>
-                <a className="proj-link link-outline" href="https://github.com/fionafreemark/the-daily-tarot"
+                <a className="proj-link link-outline" href="https://github.com/fionafreemark/the-daily-tarot" target='_blank' rel="noreferrer"
                 >GitHub</a>
               </div>
             </div>
             <div className="proj-box">
               <div className="proj-img-container">
-                <a href="https://creative-brand-design.netlify.app/" className="img-link">
+                <a href="https://creative-brand-design.netlify.app/" className="img-link" target='_blank' rel="noreferrer">
                   <img className="creative-img" src={Creative}
                     alt="Screenshot from a website home page depicting an office scene with the brand's name 'creative' along the top navigation bar." />
                 </a>
@@ -152,15 +152,15 @@ const Projects = () => {
                 </ul>
               </div>
               <div className="proj-link-container">
-                <a className="proj-link link-outline" href="https://creative-brand-design.netlify.app/" >Live
+                <a className="proj-link link-outline" href="https://creative-brand-design.netlify.app/" target='_blank' rel="noreferrer">Live
                   Site</a>
-                <a className="proj-link link-outline" href="https://github.com/fionafreemark/creative-brand-design"
+                <a className="proj-link link-outline" href="https://github.com/fionafreemark/creative-brand-design" target='_blank' rel="noreferrer"
                 >GitHub</a>
               </div>
             </div>
             <div className="proj-box">
               <div className="proj-img-container">
-                <a href="https://animal-match-app.netlify.app/" className="img-link">
+                <a href="https://animal-match-app.netlify.app/" className="img-link" target='_blank' rel="noreferrer">
                   <img className="animal-match-img"
                     src={AnimalMatch}
                     alt="Screenshot from a website project where the text says 'Your Animal Match' and a cat drinking out of a tea cup." />
@@ -180,9 +180,9 @@ const Projects = () => {
                 </ul>
               </div>
               <div className="proj-link-container">
-                <a className="proj-link link-outline" href="https://animal-match-app.netlify.app/"  >Live
+                <a className="proj-link link-outline" href="https://animal-match-app.netlify.app/" target='_blank' rel="noreferrer">Live
                   Site</a>
-                <a className="proj-link link-outline" href="https://github.com/renata-fiona/animal-match-app"
+                <a className="proj-link link-outline" href="https://github.com/renata-fiona/animal-match-app" target='_blank' rel="noreferrer"
                 >GitHub</a>
               </div>
             </div>
